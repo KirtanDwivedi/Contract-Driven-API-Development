@@ -1,0 +1,15 @@
+node_modules/
+
+dist/
+
+npm-debug.log*
+
+.DS_Store
+Thumbs.db
+openapi-specification.json
+.env
+.env.local
+
+README.txt
+
+*.tsbuildinfo

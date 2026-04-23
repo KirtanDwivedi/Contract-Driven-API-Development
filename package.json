@@ -1,0 +1,21 @@
+{
+  "name": "contract-driven-api-dev",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsc-watch --onSuccess \"node ./dist/index.js\""
+  },
+  "dependencies": {
+    "@trpc/server": "^11.16.0",
+    "express": "^5.2.1",
+    "trpc-to-openapi": "^2.1.5",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.0.0",
+    "tsc-watch": "^6.0.0",
+    "typescript": "^5.0.0"
+  }
+}
