@@ -40,8 +40,8 @@ docker run --it --network=host mongo
 
 # docker container patterns
 
-**Sidecar Pattern** : Involves running a small, helper container alongside the main application container. The sidecar handles tasks like logging, monitoring resources (CPU/memory), or collecting metrics.
-**Adapter Pattern** : Useful for bridging the gap between a legacy application container and modern requirements (like adding GraphQL support). The adapter container acts as an interface that intercepts calls for the older system.
-**Ambassador Pattern** : Simplifies network communication in microservices by offloading external calls to a sidecar proxy. This abstracts network complexity and manages routing to other services.
-**Work Queue Pattern** : Enables scalable background processing by using a queue (like RabbitMQ) to distribute incoming tasks or jobs to multiple consumer containers, allowing for parallel execution.
-### **Init Pattern** : Uses a temporary container that runs before the main application. It is primarily used for database migrations or environment pre-checks; once finished, the init container exits, and the main application starts.
+*   **Sidecar Pattern**: Involves running a small, helper container alongside the main application container. The sidecar handles tasks like logging, monitoring resources (CPU/memory), or collecting metrics.
+*   **Adapter Pattern**: Useful for bridging the gap between a legacy application container and modern requirements (like adding GraphQL support). The adapter container acts as an interface that intercepts calls for the older system.
+*   **Ambassador Pattern**: Simplifies network communication in microservices by offloading external calls to a sidecar proxy. This abstracts network complexity and manages routing to other services.
+*   **Work Queue Pattern**: Enables scalable background processing by using a queue (like RabbitMQ) to distribute incoming tasks or jobs to multiple consumer containers, allowing for parallel execution.
+*   **Init Pattern**: Uses a temporary container that runs before the main application. It is primarily used for database migrations or environment pre-checks; once finished, the init container exits, and the main application starts.
